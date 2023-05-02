@@ -1,4 +1,4 @@
-package com.example.jpastart;
+package main;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,10 +10,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EntityScan("com.example.model")
 @EnableJpaRepositories("com.example.repository")
 @SpringBootApplication
-public class SprintBootH2Application
+public class ApplicationStarter
 {
 	public static void main(String[] args)
 	{
-		SpringApplication.run(SprintBootH2Application.class, args);
+		SpringApplication.run(ApplicationStarter.class, args);
 	}
 }
